@@ -34,7 +34,7 @@ jobs:
         working-directory: doc-saurus-mole
 
       - name: Upload built docs
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: docusaurus-build
           path: doc-saurus-mole/build
@@ -64,7 +64,7 @@ jobs:
           result-encoding: string
 
       - name: Download built docs
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: docusaurus-build
           path: build  # this is where it goes for the deploy
