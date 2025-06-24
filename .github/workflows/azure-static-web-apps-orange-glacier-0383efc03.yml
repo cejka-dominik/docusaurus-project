@@ -1,5 +1,6 @@
 name: Azure Static Web Apps CI/CD
 
+# conditions when to run
 on:
   push:
     branches:
@@ -9,6 +10,7 @@ on:
     branches:
       - main
 
+# jobs to be done if conditions are met
 jobs:
   build_job:
     name: Build Docs
@@ -67,20 +69,21 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: docusaurus-build
-          path: build  # this is where it goes for the deploy
+          path: build
 
       - name: Deploy to Azure Static Web App
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_GLACIER_0383EFC03 }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ORANGE_GLACIER_0383EFC03 }} # please keep it secret, keep it safe!
           action: "upload"
-          app_location: "build"  # now this is the downloaded artifact path
+          app_location: "build"
           api_location: ""
           output_location: ""
           app_build_command: ""
           github_id_token: ${{ steps.idtoken.outputs.result }}
 
+# clean up after finished jobs
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
