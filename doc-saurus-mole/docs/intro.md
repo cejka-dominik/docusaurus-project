@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
 ---
-# Dominik welcomes you
+# Welcome from Dominik
 
-Welcome to Dominik's **Docusaurus** website and feel free to add aditional features!
+Welcome to Dominik's **Docusaurus** site and feel free to add aditional features!
 
-# Datamole welcome
+## Datamole welcome
 
 I would like to welcome all Datamole employees here :-)
 
