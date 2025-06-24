@@ -1,41 +1,39 @@
 # docusaurus-project
-WIP
-<<<<<<< HEAD
-
 Update the README with instructions on how to replicate the build locally.
 
+## Local build
 
-npx create-docusaurus@latest doc-saurus-mole classic
+clone the repo or get fresh docusaurus from offical sources:
 
-npm start
+`npx create-docusaurus@latest your-docusaurus-name classic`
 
-vlastni server:
-v 
-doc-saurus-mole
+go to created dirrectory (your-docusaurus-name) or dirrecory from the repo (doc-saurus-mole) and start the app:
 
-npm run start
+`npm start`
 
-go to localhost:3000 and enjoy the tutorial
-
-and then go to localhost:3000/doms-markdown-page for a little surprise
-=======
-hello oh
-aa
->>>>>>> refs/remotes/origin/main
+then go to [localhost:3000](localhost:3000) and enjoy the tutorial
 
 
+## How to build docusaurus container
 
+prerequisites: docker installed (or docker engine running in windows if you are working in WSL like me)
 
+[official documentation link](https://v1.docusaurus.io/docs/en/docker)
 
-How to build container
-prerequisites: docker installed
-official link: https://v1.docusaurus.io/docs/en/docker
 commands for linux terminal (start in dirrectory with Dockerfile):
-docker build -t docusaurus-site .
-docker tag docusaurus-site:latest <username>/docusaurus-site:latest
-docker push <username>/docusaurus-site:latest
+
+`docker build -t docusaurus-site .`
+
+`docker tag docusaurus-site:latest <username>/docusaurus-site:latest`
+
+`docker push <username>/docusaurus-site:latest`
+
 
 alternatively, if you want to save image localy, use:
-docker images
+
+`docker images`
+
+
 to find IMAGE ID, and then:
-docker save -o docusaurus-site.tar <IMAGE-ID>
+
+`docker save -o docusaurus-site.tar <IMAGE-ID>`
