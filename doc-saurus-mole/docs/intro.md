@@ -9,6 +9,9 @@ Welcome to Dominik's **Docusaurus** site and feel free to add aditional features
 
 I would like to welcome all Datamole employees here :-)
 
+![Docusaurus logo](/img/docusaurus.png)
+
+
 # Tutorial Intro
 
 Let's discover **Docusaurus in less than 5 minutes**.

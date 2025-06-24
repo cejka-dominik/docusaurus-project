@@ -10,6 +10,9 @@ npx create-docusaurus@latest doc-saurus-mole classic
 npm start
 
 vlastni server:
+v 
+doc-saurus-mole
+
 npm run start
 
 go to localhost:3000 and enjoy the tutorial
