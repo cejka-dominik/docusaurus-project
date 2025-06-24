@@ -1,6 +1,3 @@
-# docusaurus-project
-Update the README with instructions on how to replicate the build locally.
-
 ## Local build
 
 clone the repo or get fresh docusaurus from offical sources:
